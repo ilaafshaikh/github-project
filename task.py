@@ -202,7 +202,7 @@ def main_menu():
         print("9. Load Tasks")
         print("0. Exit")
 
-        choice = input("\nChoose an option: ").strip()
+        choice = input("\nChoose an the option: ").strip()
 
         if choice == '1':
             clear_screen()
