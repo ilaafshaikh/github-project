@@ -89,7 +89,7 @@ def add_task(tasks):
     if not title:
         print("Task title cannot be empty.")
         return
-    description = input("Description: ").strip()
+    description = input("Description is: ").strip()
     due_date = input_date("Due Date (YYYY-MM-DD): ")
     priority = input("Priority (low/medium/high): ").lower().strip()
     if priority not in ["low", "medium", "high"]:
@@ -109,7 +109,7 @@ def edit_task(tasks):
             title = input(f"Title ({task.title}): ").strip()
             if title:
                 task.title = title
-            description = input(f"Description ({task.description}): ").strip()
+          description = input(f"Description is: ({task.description}): ").strip()
             if description:
                 task.description = description
             due_date = input_date(f"Due Date ({task.due_date}): ")
@@ -119,6 +119,7 @@ def edit_task(tasks):
             if priority in ["low", "medium", "high"]:
                 task.priority = priority
             print("Task updated successfully!")
+            print("done")
         else:
             print("Invalid task number.")
     except ValueError:
