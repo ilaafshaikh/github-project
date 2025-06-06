@@ -57,7 +57,7 @@ def input_date(prompt):
             datetime.strptime(date_str, "%Y-%m-%d")
             return date_str
         except ValueError:
-            print("Invalid date format. Use YYYY-MM-DD.")
+            print("the format is valid. Use YYYY-MM-DD.")
 
 def print_task(task, idx=None):
     if idx is not None:
@@ -66,8 +66,9 @@ def print_task(task, idx=None):
         print(f"{task.title}")
     print(f"   Description: {task.description}")
     print(f"   Due Date: {task.due_date}")
-    print(f"   Priority: {task.priority}")
-    print(f"   Status: {task.status}\n")
+    print(f"   Priority of task is:priority)"
+    print(f"   Status oftask.status}\n")
+
 
 def pause():
     input("\nPress Enter to continue...")
