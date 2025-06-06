@@ -190,12 +190,12 @@ def main_menu():
         print("=== TASK MANAGER ===")
         print(f"Total Tasks: {len(tasks)}\n")
         print("1. View Tasks")
-        print("2. Add Task")
+        print("2. Add Tasks")
         print("3. Edit Task")
         print("4. Delete Task")
-        print("5. Mark Task as Complete")
+        print("5. Mark Task when Completed")
         print("6. Filter Tasks")
-        print("7. Search Tasks")
+        print("7. Search for Tasks")
         print("8. Save Tasks")
         print("9. Load Tasks")
         print("0. Exit")
@@ -237,7 +237,7 @@ def main_menu():
             print("Goodbye!")
             break
         else:
-            print("Invalid option.")
+            priiofint("Invalid option.")
             pause()
 
 # ---------- Entry Point ----------
